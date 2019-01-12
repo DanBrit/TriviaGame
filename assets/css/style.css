@@ -61,7 +61,7 @@ section {
     background-position: right top; 
 }
 #result.correctResult {
-    background-image: url("../images/check-mark.png");
+    background-image: url("../images/checkmark.png");
      background-size: 250px 250px;
 }
 #result.wrongResult {
@@ -100,6 +100,7 @@ button#newGame {
 }
 #choices {
     display: none;
+    color: white;
 }
 #choices ol {
     position: relative;
@@ -117,22 +118,3 @@ button {
     color: white;
 }
 
-@media screen and (max-width: 750px) {
-    #timer {
-        font-size: 12px;
-    }
-    h1 {
-        font-size: 65px;
-    }
-    section {
-        top: 0;
-    }
-}
-@media screen and (max-width: 550px) {
-    #score {
-        clear: both;
-    }
-    .scoreboard {
-        width: 35%;
-    }
-}
