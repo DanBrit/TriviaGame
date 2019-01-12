@@ -1,3 +1,5 @@
+// to do: add individual pictures of each question or perhaps use giphy api
+
 var questionLibrary = [
 
 	{
