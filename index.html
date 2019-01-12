@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> James Bond Trivia Game </title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script
+  				src="https://code.jquery.com/jquery-3.3.1.js"
+  				integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  				crossorigin="anonymous">			
+  		</script>
+		<!-- use proper bootstrap cdn and scripts at bottom -->
+</head>
+
+
+
+</html>
+
+<body>
+	<h1>James Bond Trivia</h1>
+		<!-- scoreboard(timer & score) -->
+		<div id="score" class="scoreboard"></div>
+		<div id="timer" class="scoreboard"></div>
+		<!-- question section -->
+		<div id="question">
+			<div class="sectionBG"></div>
+			<div id="qText"></div>
+		</div>
+		<div id="choices">
+			<div class="sectionBG"></div>
+				<ol>
+					<li class="answer" data-choice=0></li>
+					<li class="answer" data-choice=1></li>
+					<li class="answer" data-choice=2></li>
+				</ol>
+			<div id="result"></div>
+		</div>
+		<!-- selection choices -->
+<script type="text/javascript" src="assets/javascript/triviaQuestions.js"></script>
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
