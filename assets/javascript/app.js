@@ -95,19 +95,10 @@ function resetTimer(){
 function gameOver(){
 	$("body").css("background-image", 'url("../assets/images/background.png")');
 	var score = (numberRight/gameLength);
-	var praise = "That was pretty shabby. You get sent to the Wall.";
+	var praise = "You Fail.";
 	if (score > .9){
-		praise = "Amazing! You achieved the rank of King of the Seven Kingdoms.";
-	} else if (score > .8){
-		praise = "Amazing! You achieved the rank of Knight of the Kingsguard.";
-	} else if (score > .7){
-		praise = "Well done, you achieved the rank of Lord of Harrenhal.";
-	} else if (score > .6){
-		praise = "Well done, you achieved the rank of Maester.";
-	} else if (score > .5){
-		praise = "Well done, you achieved the rank of Knight's Squire.";
-	} else if (score > .4){
-		praise = "Not bad, you achieved the rank of Novice of the Citadel.";
+		praise = "Amazing! You achieved your 007 rank.";
+
 	}
 	$("#result").removeClass().html("<h1>Game Over</h1><div class='gameOverText'>You got " + numberRight + " questions right and " + numberWrong + " wrong. " + praise + "</div><button id='newGame'>Play Again</button>");
 	$("#newGame").on("click", initGame);
